@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>@Page.Title - My ASP.NET Web Page</title>
+        <title>@Page.Title</title>
         <link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
         <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -12,40 +12,33 @@
         <meta name="viewport" content="width=device-width" />
     </head>
     <body>
+        <div class="header-strip"></div>
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p class="site-title"><a href="~/">your logo here</a></p>
+                    <img src="~/Images/logo.png" class="site-logo" />
+                </div>
+                <div class="float-left">
+                    <span class="site-title"><a href="~/">Financial Tax &amp; Business Administrators CC</a></span>
                 </div>
                 <div class="float-right">
-                    <section id="login">
-                        @if (WebSecurity.IsAuthenticated) {
-                            <text>
-                                Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
-                                <form id="logoutForm" action="~/Account/Logout" method="post">
-                                    @AntiForgery.GetHtml()
-                                    <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
-                                </form>
-                            </text>
-                        } else {
-                            <ul>
-                                <li><a href="~/Account/Register">Register</a></li>
-                                <li><a href="~/Account/Login">Log in</a></li>
-                            </ul>
-                        }
-                    </section>
                     <nav>
                         <ul id="menu">
                             <li><a href="~/">Home</a></li>
-                            <li><a href="~/About">About</a></li>
+                            <li><a href="~/About">About us</a></li>
+                            <li><a href="~/Services">Services</a></li>
+                            <li><a href="~/Meet">Meet the team</a></li>
+                            <li><a href="~/Faq">FAQ</a></li>
                             <li><a href="~/Contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
+        <div class="banner-wrapper">
+            <img src="~/Images/banner.png" class="banner" />
+        </div>
         <div id="body">
-            @RenderSection("featured", required: false)
             <section class="content-wrapper main-content clear-fix">
                 @RenderBody()
             </section>
@@ -53,7 +46,13 @@
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET Web Page</p>
+                    <p>Financial Tax &amp; Business Administrators CC</p>
+                    <p>CK 1994/29595/23</p>
+                    <p>Member: A.M.C.M. DeSousa Bold</p>
+                </div>
+                <div class="float-right">
+                    <p>Copyright &copy; F.T.B.</p>
+                    <p>All rights reserved</p>
                 </div>
             </div>
         </footer>
