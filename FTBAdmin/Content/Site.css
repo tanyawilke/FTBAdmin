@@ -801,3 +801,26 @@ tr.pager td {
             margin: 0;
         }
 }
+
+.card-wrapper {
+    display: inline-grid;
+    max-width: 270px;
+    box-sizing: content-box;
+    padding: 0.8em;
+    height: 270px;
+    margin: 0.25em 0.25em;
+    border: 1px solid #c5c5c5;
+}
+
+.card-wrapper h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 2em;
+    color: #555555;
+}
+
+.card-wrapper p {
+    margin: 0;
+    padding: 0;
+}
