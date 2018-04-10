@@ -632,7 +632,7 @@ tr.pager td {
 }
 
 .card-wrapper {
-    display: inline-grid;
+    display: inline-block;
     width: 270px;
     box-sizing: border-box;
     padding: 0.8em;
