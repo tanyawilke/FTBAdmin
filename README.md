@@ -1,2 +1,2 @@
-# FTBAdmin
-Sample FTB Web Site
+# FTB Administrators
+FTB Web Site
